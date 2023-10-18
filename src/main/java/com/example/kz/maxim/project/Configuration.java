@@ -8,10 +8,14 @@ import com.example.kz.maxim.project.service.ServiceB;
 import com.example.kz.maxim.project.service.ServiceC;
 import com.example.kz.maxim.project.service.ServiceD;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Import;
+import org.springframework.context.annotation.PropertySource;
 
 import java.security.Provider;
 
 @org.springframework.context.annotation.Configuration
+@PropertySource("Hello")
+@Import(ServiceA.class)
 public class Configuration {
     @Bean
     public ServiceA serviceA(RepoA repoA){
