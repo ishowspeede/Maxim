@@ -1,6 +1,5 @@
 package com.example.kz.maxim.project.repository;
 
-import com.example.kz.maxim.project.RepoInterface;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Repository;
 

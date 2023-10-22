@@ -1,6 +1,6 @@
 package com.example.kz.maxim.project.service;
 
-import com.example.kz.maxim.project.RepoInterface;
+import com.example.kz.maxim.project.repository.RepoInterface;
 import com.example.kz.maxim.project.repository.RepoC;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;

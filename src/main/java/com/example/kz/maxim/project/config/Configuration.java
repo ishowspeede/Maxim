@@ -1,4 +1,4 @@
-package com.example.kz.maxim.project;
+package com.example.kz.maxim.project.config;
 
 import com.example.kz.maxim.project.repository.RepoA;
 import com.example.kz.maxim.project.repository.RepoB;
