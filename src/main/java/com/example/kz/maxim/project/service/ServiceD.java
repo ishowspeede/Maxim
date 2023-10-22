@@ -1,6 +1,6 @@
 package com.example.kz.maxim.project.service;
 
-import lombok.Value;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 @Component

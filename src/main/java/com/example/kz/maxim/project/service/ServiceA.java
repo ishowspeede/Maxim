@@ -2,9 +2,10 @@ package com.example.kz.maxim.project.service;
 
 import com.example.kz.maxim.project.RepoInterface;
 import com.example.kz.maxim.project.repository.RepoA;
-import lombok.Value;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.PostConstruct;

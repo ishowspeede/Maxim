@@ -14,7 +14,7 @@ import org.springframework.context.annotation.PropertySource;
 import java.security.Provider;
 
 @org.springframework.context.annotation.Configuration
-@PropertySource("Hello")
+@PropertySource("classpath:myapp.properties")
 @Import(ServiceA.class)
 public class Configuration {
     @Bean
