@@ -14,7 +14,7 @@ public class ServiceB {
     private RepoInterface repoInterface;
 
     @Value("example2.property")
-    private int value2;
+    private String value2;
 
     @Autowired
     public ServiceB(@Qualifier("repoB")

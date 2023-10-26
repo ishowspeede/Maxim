@@ -14,7 +14,7 @@ public class ServiceC {
     private RepoInterface repoInterface;
 
     @Value("example3.property")
-    private boolean value3;
+    private String value3;
 
     @Autowired
     public ServiceC(@Qualifier("repoC")

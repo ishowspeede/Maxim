@@ -8,7 +8,7 @@ public class ServiceD {
     public ServiceC serviceC;
 
     @Value("example4.property")
-    private long value4;
+    private String value4;
 
     public ServiceD(ServiceC serviceC) {
     }
