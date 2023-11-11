@@ -6,7 +6,6 @@ import org.springframework.stereotype.Repository;
 import java.util.zip.DataFormatException;
 
 @Repository
-@Primary
 public class RepoC implements RepoInterface {
     public void functionC() {
         System.out.println("class (RepoC) method called");

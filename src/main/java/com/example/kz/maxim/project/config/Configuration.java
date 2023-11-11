@@ -17,23 +17,4 @@ import java.security.Provider;
 @PropertySource("classpath:myapp.properties")
 @Import(ServiceA.class)
 public class Configuration {
-    @Bean
-    public ServiceA serviceA(RepoA repoA){
-        return new ServiceA(repoA);
-    }
-
-    @Bean
-    public ServiceB serviceB(ServiceA serviceA, RepoB repoB) {
-        return new ServiceB(serviceA,repoB);
-    }
-
-    @Bean
-    public ServiceC serviceC(ServiceB serviceB, RepoC repoC) {
-        return new ServiceC(serviceB, repoC);
-    }
-
-    @Bean
-    public ServiceD serviceD(ServiceC serviceC) {
-        return new ServiceD(serviceC);
-    }
 }
