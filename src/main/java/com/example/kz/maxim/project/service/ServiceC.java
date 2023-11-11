@@ -17,9 +17,14 @@ public class ServiceC {
     private String value3;
 
     @Autowired
-    public ServiceC(@Qualifier("repoC")
-            ServiceB serviceB, RepoInterface repoInterface) {
+    public ServiceC(
+            ServiceB serviceB, @Qualifier("repoC") RepoInterface repoInterface) {
         this.repoInterface = repoInterface;
+        this.serviceB = serviceB;
+    }
+
+    public static String getMessageFromDbClassC() {
+        return "This message selected from database ClassC";
     }
 
     public void methodC() {

@@ -3,6 +3,8 @@ package com.example.kz.maxim.project.repository;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Repository;
 
+import java.util.zip.DataFormatException;
+
 @Repository
 @Primary
 public class RepoC implements RepoInterface {
