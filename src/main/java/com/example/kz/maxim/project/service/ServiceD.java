@@ -2,7 +2,6 @@ package com.example.kz.maxim.project.service;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import java.util.zip.DataFormatException;
@@ -27,14 +26,16 @@ public class ServiceD {
         throw new DataFormatException("This message selected from database ClassD");
     }
 
-    public void printMessage()  {
+    public void printMessage() {
         System.out.println("Print from B class: " + ServiceC.getMessageFromDbClassC());
         System.out.println("Print from C class: " + ServiceD.getMessageFromDbClassD());
         try {
             System.out.println("throwError from D class: " + ServiceD.throwError());
-        } catch (DataFormatException e) {          log.error("Threw");
+        } catch (DataFormatException e) {
+            log.error("Threw");
         }
     }
+
     public void methodD() {
         serviceC.methodC();
     }

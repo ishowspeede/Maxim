@@ -13,7 +13,6 @@ import java.util.zip.DataFormatException;
 @Component
 public class ServiceB {
     public ServiceA serviceA;
-    public RepoB repoB;
     private RepoInterface repoInterface;
 
     @Value("example2.property")
@@ -28,6 +27,5 @@ public class ServiceB {
     public void methodB() {
         System.out.println("class {ServiceB} method called");
         serviceA.methodA();
-        repoB.functionB();
     }
 }

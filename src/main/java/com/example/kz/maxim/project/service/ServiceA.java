@@ -13,20 +13,19 @@ import javax.annotation.PreDestroy;
 
 @Service
 public class ServiceA {
-    public RepoA repoA;
     private RepoInterface repoInterface;
 
     @Value("example1.property")
     private String value1;
 
     @Autowired
-    public ServiceA(@Qualifier("repoA") RepoInterface repoInterface) {
+    public ServiceA(RepoInterface repoInterface) {
         this.repoInterface = repoInterface;
     }
 
     public void methodA() {
         System.out.println("class {ServiceA} method called");
-        repoA.functionA();
+        repoInterface.repoMethod();
     }
 
     @PostConstruct

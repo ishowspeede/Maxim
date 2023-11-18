@@ -4,7 +4,6 @@ import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Repository;
 
 @Repository
-@Primary
 public class RepoB implements RepoInterface {
     public void functionB() {
         System.out.println("class (RepoB) method called");

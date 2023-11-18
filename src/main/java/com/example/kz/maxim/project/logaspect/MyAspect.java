@@ -3,7 +3,6 @@ package com.example.kz.maxim.project.logaspect;
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.*;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -35,10 +34,6 @@ public class MyAspect {
         log.info("It runs after an exception is thrown by the method. " + joinPoint.getSignature().toShortString());
     }
 
-    @Around("loggingOperation())")
-    public void around(JoinPoint joinPoint) throws Throwable
-    {
-        log.info("It can perform the behavior before and after the method invocation. " + joinPoint.getSignature().toShortString());
-    }
+
 
 }
