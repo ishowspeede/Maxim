@@ -9,7 +9,6 @@ import org.springframework.stereotype.Component;
 @Component
 @Slf4j
 @Aspect
-@SpringBootApplication
 public class MyAspect {
     @Pointcut("execution(* com.example.kz.maxim.project.service.ServiceD.*(..))")
     protected void loggingOperation() {
