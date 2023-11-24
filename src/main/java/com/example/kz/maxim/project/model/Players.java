@@ -1,21 +1,23 @@
 package com.example.kz.maxim.project.model;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import javax.persistence.*;
 
+@Data
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
 @Entity
+@Table (name = "players")
 public class Players {
-
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    public long playerId;
-
-    @Column(nullable = false)
-    public String name;
-
-    @Column(nullable = false)
-    public int age;
-
-    @Column(nullable = false)
-    public String role;
+    private long id;
+    private String name;
+    private int age;
+    private String role;
 
 }
