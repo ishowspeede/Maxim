@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "value.from.mypros",
+      "type": "java.lang.String",
+      "description": "Description for value.from.mypros."
+  }
+] }
